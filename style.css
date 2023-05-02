@@ -1,0 +1,156 @@
+:root {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    width: 310px;
+    height: 542px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px 10px hsla(0, 0%, 7%, 0.205);
+}
+
+.eth-img {
+    border-radius: 10px;
+    height: 302px;
+}
+
+.eth-image,
+.background,
+.title,
+span:hover {
+    cursor: pointer;
+}
+
+.background:active {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.title:active {
+    color: hsl(178, 100%, 50%);
+}
+span:active {
+    color: hsl(178, 100%, 50%);
+}
+
+.background {
+    position: absolute;
+    opacity: 1;
+}
+
+.background {
+    background-color: hsla(178, 100%, 50%, 0.425);
+    width: 310px;
+    border-radius: 10px;
+    height: 302px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.eye {
+    top: 126px;
+    left: 133px;
+    position: absolute;
+    transition: opacity 0.15s;
+}
+
+.eth-image:active {
+}
+
+.title {
+    color: white;
+    font-size: 1.12rem;
+    font-weight: 400;
+    margin: 26px 0 18px;
+    font-weight: 600;
+}
+
+.description {
+    color: rgb(146, 158, 182);
+    margin: 0 0 7px;
+    line-height: 26px;
+}
+
+.stats-timeleft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(144, 160, 159, 0.295);
+    padding-bottom: 8px;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.timeleft {
+    display: flex;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+}
+
+.eth-icon,
+.clock {
+    height: 18px;
+    margin-right: 6px;
+}
+
+.left {
+    color: rgb(146, 158, 182);
+    font-size: 16px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.user-pic {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-right: 16px;
+}
+
+.creation {
+    color: rgb(146, 158, 182);
+    font-size: 16px;
+}
+
+span {
+    color: rgb(214, 213, 213);
+    font-weight: 600;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+}
